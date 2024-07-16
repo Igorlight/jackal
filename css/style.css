@@ -742,8 +742,8 @@ body::after {
 
 .prices__decor {
   position: absolute;
-  bottom: -40%;
-  right: 17%;
+  bottom: -85%;
+  right: 0;
   z-index: -50;
 }
 
@@ -773,6 +773,8 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 25rem;
+  height: 25rem;
 }
 
 .prices__circle img {
@@ -781,6 +783,10 @@ body::after {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .tabs-prices__club {
@@ -1267,12 +1273,6 @@ body::after {
   }
 }
 
-@media (max-width: 61.99875em) {
-  .prices__decor {
-    right: 25%;
-  }
-}
-
 @media (max-width: 47.99875em) {
   .popup__text {
     -webkit-box-orient: vertical;
@@ -1412,6 +1412,9 @@ body::after {
   .prices__decor {
     bottom: 50%;
     right: 50%;
+    -webkit-transform: translate(50%, 50%);
+        -ms-transform: translate(50%, 50%);
+            transform: translate(50%, 50%);
     opacity: 0.2;
   }
 
@@ -1469,6 +1472,13 @@ body::after {
 @media (max-width: 29.99875em) {
   ._swiper {
     width: 100%;
+  }
+}
+
+@media (max-width: 26.25rem) {
+  .prices__circle {
+    width: 18.75rem;
+    height: 18.75rem;
   }
 }
 
